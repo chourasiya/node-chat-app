@@ -62,9 +62,7 @@ socket.on('newLocationMessage', function(message) {
       url: message.url,
       createdAt: formattedTime
     });
-
     jQuery('#messages').append(html);
-    scrollToBottom();
     // var li = jQuery('<li></li>');
     // var a = jQuery('<a target="_blank">My current location</a>')
     //
@@ -72,6 +70,7 @@ socket.on('newLocationMessage', function(message) {
     // a.attr('href', message.url);
     // li.append(a);
     // jQuery('#messages').append(li);
+    scrollToBottom();
 });
 
 // socket.emit('createMessage', {
