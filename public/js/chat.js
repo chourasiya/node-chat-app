@@ -52,6 +52,7 @@ socket.on('newMessage', function(message) {
     // li.text(message.from+' '+formattedTime+': '+message.text);
     //
     // jQuery('#messages').append(li);
+    //for improve
 });
 
 socket.on('newLocationMessage', function(message) {
